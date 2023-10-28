@@ -60,17 +60,17 @@ Environment variables prefixed with `REACT_APP_` are embedded into the build at 
 
 #### Components:
 
-1. **SearchBar** (`components/SearchBar.jsx`):
+##### 1. **SearchBar** (`components/SearchBar.jsx`):
    - This component contains an input field and a button.
    - Users type a movie's name or keyword into the input field.
    - The search should be initiated when the button is clicked or the enter key is pressed.
 
-2. **MovieItem** (`components/MovieItem.jsx`):
+##### 2. **MovieItem** (`components/MovieItem.jsx`):
    - This component is responsible for displaying a single movie result.
    - It should accept a movie object as a prop and display essential details like the title, year, and poster image.
    - The movie's title or image can be made clickable to navigate to its detailed info.
 
-3. **MovieList** (`components/MovieList.jsx`):
+##### 3. **MovieList** (`components/MovieList.jsx`):
    - This component will display a list of movies based on the search term.
    - Use the `MovieItem` component to render each movie.
    - If no movies are found, display an appropriate message to the user.
@@ -78,21 +78,21 @@ Environment variables prefixed with `REACT_APP_` are embedded into the build at 
 
 #### Pages:
 
-1. **HomePage** (`pages/HomePage.jsx`):
+##### 1. **HomePage** (`pages/HomePage.jsx`):
    - This is the landing page of the application. You can provide a brief description of the application or any other relevant information here.
    - It should also include the `SearchBar` to allow users to initiate movie searches.
 
-2. **SearchPage** (`pages/SearchPage.jsx`):
+##### 2. **SearchPage** (`pages/SearchPage.jsx`):
    - This page will display the search results.
    - It should prominently feature the `MovieList` component.
    - You can also incorporate the `SearchBar` at the top to allow users to refine or change their search.
 
-3. **MovieDetailsPage** (`pages/MovieDetailsPage.jsx`):
+##### 3. **MovieDetailsPage** (`pages/MovieDetailsPage.jsx`):
    - This page displays detailed information about a specific movie.
    - The movie's detailed attributes, like its plot, actors, ratings, etc., should be prominently displayed.
    - Provide a back button or link for users to return to the search results or home page.
 
-4. **NotFoundPage** (`pages/NotFoundPage.jsx`):
+##### 4. **NotFoundPage** (`pages/NotFoundPage.jsx`):
    - This page will be displayed if a user tries to navigate to a route that doesn't exist.
    - A simple message like "404: Page Not Found" should suffice. Consider adding a link to navigate back to the home page.
 
