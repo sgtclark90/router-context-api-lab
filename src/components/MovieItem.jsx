@@ -11,6 +11,7 @@ const MovieItem = ({ movieId }) => {
   const fetchMovieData = async (id) => {
     try {
       const movie = await fetchMovieById(id);
+      console.log(movie)
       setMovieData(movie);
     } catch (error) {
       console.error('Error fetching movie data:', error);
