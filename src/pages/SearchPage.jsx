@@ -8,7 +8,7 @@ const SearchPage = () => {
   return (
     <div className="search-page">
       <h2>Search Results</h2>
-      {searchResults.length > 0 ? (
+      {searchResults && searchResults.length > 0 ? ( // Add a check for searchResults
         <div className="movie-list">
           {searchResults.map((movie) => (
             <MovieItem key={movie.id} movie={movie} />

@@ -1,8 +1,8 @@
 import React, { useContext, useState } from 'react';
-import { MovieContext } from '../context/MovieContext';
+import { useMovieContext } from '../context/MovieContext'; // Use the hook instead of importing 'MovieContext'
 
 const SearchBar = () => {
-  const { searchMovies } = useContext(MovieContext);
+  const { searchMovies } = useMovieContext(); // Use the hook to access the context
   const [searchTerm, setSearchTerm] = useState('');
 
   const handleSearch = (e) => {

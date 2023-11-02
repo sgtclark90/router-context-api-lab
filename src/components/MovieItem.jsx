@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { fetchMovieById } from '../services/api';
 
-const MovieItem = ({ movieId }) => {
+const MovieItem = (zzz) => {
+  const movieId = zzz.movie.imdbID
   const [movieData, setMovieData] = useState(null);
 
   useEffect(() => {
