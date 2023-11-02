@@ -7,6 +7,7 @@ const SearchBar = () => {
 
   const handleSearch = (e) => {
     e.preventDefault();
+    console.log('search term: ', searchTerm);
     searchMovies(searchTerm);
   };
 
