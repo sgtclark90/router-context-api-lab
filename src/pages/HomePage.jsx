@@ -5,6 +5,7 @@ import { useNavigate } from 'react-router-dom';
 
 const HomePage = () => {
   const { movies } = useMovieContext(); 
+  const navigate = useNavigate();
   const goToSearchPage =() => {
     navigate('/search');
   }

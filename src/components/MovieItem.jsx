@@ -28,7 +28,12 @@ const MovieItem = (zzz) => {
       <img src={movieData.Poster} alt={movieData.Title} />
       <div className="movie-details">
         <h3 className="movie-title">{movieData.Title}</h3>
+        <p className='plot'>Plot: {movieData.Plot}</p>
         <p className="movie-year">Year: {movieData.Year}</p>
+        <p className='rating'>Rating: {movieData.Rated}</p>
+        <p className='release-date'>Released: {movieData.Released}</p>
+        <p className='genre'>Genre: {movieData.Genre}</p>
+        <p className='rating'>IMDB Rating: {movieData.imdbRating}</p>
       </div>
     </div>
   );
