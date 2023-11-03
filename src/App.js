@@ -5,6 +5,7 @@ import MovieDetailsPage from './pages/MovieDetailsPage';
 import SearchPage from './pages/SearchPage';
 import NotFoundPage from './pages/NotFoundPage';
 import { MovieProvider } from './context/MovieContext';
+import '../src/App.css';
 
 function App() {
   return (
